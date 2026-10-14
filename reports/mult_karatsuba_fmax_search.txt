@@ -1,0 +1,17 @@
+fmax search for mult_karatsuba  (top mult_karatsuba, generics: SIGNED_MODE 0 PIPE_STAGES 4, part xc7a100tcsg324-1)
+flow: synth_design -mode out_of_context; opt_design; place_design; phys_opt_design; route_design
+pass = post-route WNS >= 0 && WHS >= 0 && WPWS >= 0
+
+   5.000 ns    200.00 MHz  WNS   -1.749  WHS    0.173  WPWS    1.116  FAIL
+   5.500 ns    181.82 MHz  WNS   -1.249  WHS    0.173  WPWS    1.616  FAIL
+   6.000 ns    166.67 MHz  WNS   -0.749  WHS    0.173  WPWS    2.116  FAIL
+   6.500 ns    153.85 MHz  WNS   -0.157  WHS    0.166  WPWS    2.616  FAIL
+   7.000 ns    142.86 MHz  WNS    0.170  WHS    0.161  WPWS    3.000  PASS
+   6.750 ns    148.15 MHz  WNS   -0.028  WHS    0.167  WPWS    2.866  FAIL
+   6.875 ns    145.45 MHz  WNS    0.224  WHS    0.166  WPWS    2.938  PASS
+   6.813 ns    146.78 MHz  WNS   -0.102  WHS    0.164  WPWS    2.906  FAIL
+   6.844 ns    146.11 MHz  WNS    0.085  WHS    0.166  WPWS    2.922  PASS
+
+coarse (0.5 ns steps) : 7.000 ns = 142.86 MHz
+achieved (bisected)   : 6.844 ns = 146.11 MHz
+first failing period  : 6.813 ns

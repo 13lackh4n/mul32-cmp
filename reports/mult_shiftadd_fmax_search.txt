@@ -1,0 +1,16 @@
+fmax search for mult_shiftadd  (top mult_shiftadd, generics: SIGNED_MODE 0 PIPE_STAGES 2, part xc7a100tcsg324-1)
+flow: synth_design -mode out_of_context; opt_design; place_design; phys_opt_design; route_design
+pass = post-route WNS >= 0 && WHS >= 0 && WPWS >= 0
+
+   5.000 ns    200.00 MHz  WNS    0.885  WHS    0.132  WPWS    2.000  PASS
+   4.500 ns    222.22 MHz  WNS    0.461  WHS    0.136  WPWS    1.750  PASS
+   4.000 ns    250.00 MHz  WNS    0.432  WHS    0.167  WPWS    1.500  PASS
+   3.500 ns    285.71 MHz  WNS   -0.067  WHS    0.110  WPWS    1.250  FAIL
+   3.750 ns    266.67 MHz  WNS    0.205  WHS    0.110  WPWS    1.375  PASS
+   3.625 ns    275.86 MHz  WNS   -0.015  WHS    0.108  WPWS    1.312  FAIL
+   3.688 ns    271.15 MHz  WNS    0.181  WHS    0.169  WPWS    1.344  PASS
+   3.657 ns    273.45 MHz  WNS    0.112  WHS    0.106  WPWS    1.329  PASS
+
+coarse (0.5 ns steps) : 4.000 ns = 250.00 MHz
+achieved (bisected)   : 3.657 ns = 273.45 MHz
+first failing period  : 3.625 ns

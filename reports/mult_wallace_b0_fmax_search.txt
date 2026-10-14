@@ -1,0 +1,15 @@
+fmax search for mult_wallace_b0  (top mult_wallace, generics: SIGNED_MODE 0 PIPE_STAGES 4 USE_BOOTH 0, part xc7a100tcsg324-1)
+flow: synth_design -mode out_of_context; opt_design; place_design; phys_opt_design; route_design
+pass = post-route WNS >= 0 && WHS >= 0 && WPWS >= 0
+
+   5.000 ns    200.00 MHz  WNS    0.219  WHS    0.104  WPWS    1.520  PASS
+   4.500 ns    222.22 MHz  WNS    0.219  WHS    0.104  WPWS    1.270  PASS
+   4.000 ns    250.00 MHz  WNS   -0.142  WHS    0.145  WPWS    1.020  FAIL
+   4.250 ns    235.29 MHz  WNS    0.009  WHS    0.104  WPWS    1.145  PASS
+   4.125 ns    242.42 MHz  WNS    0.015  WHS    0.138  WPWS    1.082  PASS
+   4.063 ns    246.12 MHz  WNS   -0.034  WHS    0.145  WPWS    1.051  FAIL
+   4.094 ns    244.26 MHz  WNS    0.106  WHS    0.104  WPWS    1.067  PASS
+
+coarse (0.5 ns steps) : 4.500 ns = 222.22 MHz
+achieved (bisected)   : 4.094 ns = 244.26 MHz
+first failing period  : 4.063 ns

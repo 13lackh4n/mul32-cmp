@@ -1,0 +1,14 @@
+fmax search for mult_behav  (top mult_behav, generics: SIGNED_MODE 0 PIPE_STAGES 2, part xc7a100tcsg324-1)
+flow: synth_design -mode out_of_context; opt_design; place_design; phys_opt_design; route_design
+pass = post-route WNS >= 0 && WHS >= 0 && WPWS >= 0
+
+   5.000 ns    200.00 MHz  WNS   -0.030  WHS    0.218  WPWS    1.116  FAIL
+   5.500 ns    181.82 MHz  WNS    0.260  WHS    0.218  WPWS    1.616  PASS
+   5.250 ns    190.48 MHz  WNS    0.150  WHS    0.218  WPWS    1.366  PASS
+   5.125 ns    195.12 MHz  WNS    0.088  WHS    0.218  WPWS    1.241  PASS
+   5.063 ns    197.51 MHz  WNS    0.026  WHS    0.218  WPWS    1.179  PASS
+   5.031 ns    198.77 MHz  WNS   -0.060  WHS    0.218  WPWS    1.147  FAIL
+
+coarse (0.5 ns steps) : 5.500 ns = 181.82 MHz
+achieved (bisected)   : 5.063 ns = 197.51 MHz
+first failing period  : 5.031 ns
