@@ -3,7 +3,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanc
 | Tool Version : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
 | Date         : Wed Oct 14 13:20:04 2026
 | Host         : DESKTOP-GFF81BM running 64-bit major release  (build 9200)
-| Command      : report_utilization -file C:/Users/User/Desktop/mul32-cmp/reports/mult_shiftadd_s1_synth_util.rpt
+| Command      : report_utilization -file ./reports/mult_shiftadd_s1_synth_util.rpt
 | Design       : mult_shiftadd
 | Device       : xc7a100tcsg324-1
 | Speed File   : -1

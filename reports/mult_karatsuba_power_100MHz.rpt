@@ -3,7 +3,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanc
 | Tool Version     : Vivado v.2025.1.1 (win64) Build 6233196 Thu Sep 11 21:27:30 MDT 2025
 | Date             : Wed Oct 14 14:12:30 2026
 | Host             : DESKTOP-GFF81BM running 64-bit major release  (build 9200)
-| Command          : report_power -file C:/Users/User/Desktop/mul32-cmp/build/impl/mult_karatsuba_100MHz/T10.000/power.rpt
+| Command          : report_power -file ./build/impl/mult_karatsuba_100MHz/T10.000/power.rpt
 | Design           : mult_karatsuba
 | Device           : xc7a100tcsg324-1
 | Design State     : routed
