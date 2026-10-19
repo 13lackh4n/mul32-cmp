@@ -1,1 +1,25 @@
+# Build output (scripts/run_all.sh, scripts/sim.sh)
 build/
+
+# Vivado / xsim leftovers when tools are run from the repo root
+.Xil/
+xsim.dir/
+*.pb
+*.jou
+*.log
+*.wdb
+*.str
+webtalk*
+vivado*.backup.*
+usage_statistics_webtalk.*
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

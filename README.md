@@ -23,6 +23,18 @@ testbench (in-order scoreboard, exact compare, latency and protocol checks).
 The testbench itself is checked against a reference model with injected
 faults (`scripts/tb_selftest.sh`).
 
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `rtl/` | The four multiplier designs |
+| `tb/` | Self-checking testbench, reference model, `golden.py` vector generator |
+| `vectors/` | Generated test vectors (full and smoke sets, both signedness modes) |
+| `constr/` | Shared timing constraints |
+| `scripts/` | Simulation, implementation and summary scripts |
+| `reports/` | Vivado utilization, timing and power reports, `summary.md` |
+| `schematics/` | Post-synthesis schematics and simulation waveforms |
+
 ## How to reproduce
 
 Requirements: Python 3, Vivado 2025.1 (xsim is used for simulation), a bash
