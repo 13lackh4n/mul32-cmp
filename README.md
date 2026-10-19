@@ -124,3 +124,7 @@ All five configurations pass the full vector sets in both signedness modes
 - **fmax resolution.** Pass/fail is not perfectly monotonic in the clock
   period; each fmax is the tightest period that passed, to about 0.03-0.05 ns.
 - **One device, one tool version, default strategy only.**
+
+## License
+
+[MIT](LICENSE)
